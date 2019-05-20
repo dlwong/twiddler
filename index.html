@@ -39,9 +39,9 @@
               var $tweet_message = $('<div class=tweet_message></div>');
               var $tweet_time = $('<span class=tweet_time></span>');
 
-              $tweet_user.addClass(tweet.user).text('@' + tweet.user).appendTo($tweet);
-              $tweet_message.addClass(tweet.message).text(tweet.message).appendTo($tweet);
-              $tweet_time.addClass(tweet.created_at).text(moment(tweet.created_at).fromNow()).appendTo($tweet_message);
+              $tweet_user.text('@' + tweet.user).appendTo($tweet);
+              $tweet_message.text(tweet.message).appendTo($tweet);
+              $tweet_time.text(moment(tweet.created_at).fromNow()).appendTo($tweet_message);
 
               $tweet.appendTo($body);
 
@@ -60,11 +60,11 @@
                   var $tweet_message = $('<div class=tweet_message></div>');
                   var $tweet_time = $('<span class=tweet_time></span>');
 
-                  $tweet_user.addClass(tweet.user).text('@' + tweet.user).appendTo($tweet);
-                  $tweet_message.addClass(tweet.message).text(tweet.message).appendTo($tweet);
-                  $tweet_time.addClass(tweet.created_at).text(moment(tweet.created_at).fromNow()).appendTo($tweet_message);
+                  $tweet_user.text('@' + tweet.user).appendTo($tweet);
+                  $tweet_message.text(tweet.message).appendTo($tweet);
+                  $tweet_time.text(moment(tweet.created_at).fromNow()).appendTo($tweet_message);
 
-                  $tweet.appendTo($body).slideDown(500);
+                  $tweet.appendTo($body).slideDown();
                   index -= 1;
                 }
             });
@@ -74,8 +74,8 @@
          
               var user = $(this).attr('id');
 
-              $('.tweet').not("div:contains('" + user + "')").hide(400);
-              $("div:contains('" + user + "')").show(400);
+              $('.tweet').not("div:contains('" + user + "')").hide();
+              $("div:contains('" + user + "')").show();
           
             });
 

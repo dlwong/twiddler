@@ -6,7 +6,7 @@ h1 {
   font-family: 'Arial';
   font-size: 35px;
   font-weight: bold;
-  margin: 10px 10px 10px 10px;
+  margin: 20px 20px 10px 20px;
   text-align: center;
 }
 
@@ -47,12 +47,11 @@ button {
 }
 
 .tweet_message {
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 10px 15px;
 }
 
 .tweet_user {
   font-weight: bold;
-  display: inline;
   margin: 5px;
 }
 
